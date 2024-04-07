@@ -1,0 +1,25 @@
+<html lang="en">
+	<%- include("../partials/head.ejs") %>
+
+	<body>
+		<div class="books content">
+			<h2>All Books</h2>
+
+			<% if (books.length > 0) { %> <% books.forEach(book => { %>
+			<a class="single" href="/books/<%= book.id %>">
+				<h3 class="title"><%= book.title %></h3>
+			</a>
+			<p><strong>Author:</strong> <%= book.author %></p>
+			<p>
+				<strong>Published Date:</strong> <%=
+				new Date(book.publishedDate.$date).toLocaleDateString('en-GB') %>
+			</p>
+			<p><strong>Genre:</strong> <%= book.genre.join(',') %></p>
+			<p><strong>Rating:</strong> <%= book.rating %></p>
+
+			<% }) %> <% } else { %>
+			<p>There are no books to display...</p>
+			<% } %>
+		</div>
+	</body>
+</html>

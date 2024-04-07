@@ -1,0 +1,33 @@
+<html lang="en">
+	<%- include("../partials/head.ejs") %>
+
+	<body>
+		<div class="details content">
+			<h3 class="title"><%= book.title %></h3>
+			<p><strong>Author:</strong> <%= book.author %></p>
+			<p>
+				<strong>Published Date:</strong> <%= new
+				Date(book.publishedDate.$date).toLocaleDateString('en-GB') %>
+			</p>
+			<p><strong>Genre:</strong> <%= book.genre.join(', ') %></p>
+			<p><strong>Rating:</strong> <%= book.rating %></p>
+			<a class="delete" data-doc="<%= book.id %>">delete</a>
+			<a class="update" href="/books/update/<%= book.id %>"">update</a>
+		</div>
+
+		<script>
+			const deleteIcon = document.querySelector('a.delete')
+
+			deleteIcon.addEventListener('click', e => {
+				const endpoint = `/books/${deleteIcon.dataset.doc}`
+
+				fetch(endpoint, {
+					method: 'DELETE',
+				})
+					.then(response => response.json())
+					.then(data => (window.location.href = data.redirect))
+					.catch(err => console.log(err))
+			})
+		</script>
+	</body>
+</html>

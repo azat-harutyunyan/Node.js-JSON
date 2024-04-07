@@ -1,0 +1,139 @@
+[
+  {
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "publishedDate": {
+      "$date": "1925-04-10T00:00:00.000-0700"
+    },
+    "genre": [
+      "Fiction",
+      "Classic"
+    ],
+    "rating": 4.2
+  },
+  {
+    "id": 2,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "publishedDate": {
+      "$date": "1960-07-11T00:00:00.000-0700"
+    },
+    "genre": [
+      "Fiction",
+      "Classic"
+    ],
+    "rating": 4.4
+  },
+  {
+    "id": 3,
+    "title": "1984",
+    "author": "George Orwell",
+    "publishedDate": {
+      "$date": "1949-06-08T00:00:00.000-0700"
+    },
+    "genre": [
+      "Fiction",
+      "Dystopian"
+    ],
+    "rating": 4.3
+  },
+  {
+    "id": 4,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "publishedDate": {
+      "$date": "1813-01-28T00:00:00.000-0800"
+    },
+    "genre": [
+      "Fiction",
+      "Romance",
+      "Classic"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": 5,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "publishedDate": {
+      "$date": "1951-07-16T00:00:00.000-0700"
+    },
+    "genre": [
+      "Fiction"
+    ],
+    "rating": 4
+  },
+  {
+    "id": 6,
+    "title": "Moby-Dick",
+    "author": "Herman Melville",
+    "publishedDate": {
+      "$date": "1851-10-18T00:00:00.000-0700"
+    },
+    "genre": [
+      "Fiction",
+      "Adventure",
+      "Classic"
+    ],
+    "rating": 4.1
+  },
+  {
+    "id": 7,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "publishedDate": {
+      "$date": "1954-07-29T00:00:00.000-0700"
+    },
+    "genre": [
+      "Fiction",
+      "Fantasy",
+      "Adventure",
+      "Classic"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": 8,
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "publishedDate": {
+      "$date": "1847-10-16T00:00:00.000-0700"
+    },
+    "genre": [
+      "Fiction",
+      "Romance",
+      "Classic"
+    ],
+    "rating": 4.3
+  },
+  {
+    "id": 9,
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "publishedDate": {
+      "$date": "1818-01-01T00:00:00.000-0800"
+    },
+    "genre": [
+      "Fiction",
+      "Horror",
+      "Classic"
+    ],
+    "rating": 4.2
+  },
+  {
+    "id": 10,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "publishedDate": {
+      "$date": "1932-01-01T00:00:00.000-0800"
+    },
+    "genre": [
+      "Fiction",
+      "Dystopian",
+      "Science Fiction",
+      "Classic"
+    ],
+    "rating": 4.2
+  }
+]
